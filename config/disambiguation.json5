@@ -1,0 +1,42 @@
+{
+  train_row_data_path: 'data/train_author.json',
+  train_pub_data_path: 'data/train_pub.json',
+  val_row_data_path: 'data/val_author.json',
+  val_pub_data_path: 'data/val_pub.json',
+  val_label_path: 'data/val_author_label.json',
+  test_row_data_path: 'data/OAG-v2-track1/OAG-v2-track1/valid/sna_valid_author_raw.json',
+  test_pub_data_path: 'data/OAG-v2-track1/OAG-v2-track1/valid/sna_valid_pub.json',
+  train_all_data_path: 'data/OAG-v2-track1/OAG-v2-track1/train_author.json',
+  train_all_pub_path: 'data/OAG-v2-track1/OAG-v2-track1/train_pub.json',
+
+  all_text_path: 'features/all_text.txt',
+
+  save_word2vec_model: 'model_saving/word2vec.model',
+
+  feature_train_path: 'features/train_origin_features.pickle',
+  feature_test_path: 'features/test_origin_features.pickle',
+  feature_val_path: 'features/val_origin_features.pickle',
+
+  feature_global_train_path: 'features/train_global_features.pickle',
+  feature_global_test_path: 'features/test_global_features.pickle',
+  feature_global_val_path: 'features/val_global_features.pickle',
+
+  feature_local_train_path: 'features/train_local_features.pickle',
+  feature_local_test_path: 'features/test_local_features.pickle',
+  feature_local_val_path: 'features/val_local_features.pickle',
+
+
+  val_result: 'result/val_result.json',
+  test_result: 'result/test_result.json',
+  global_model_save_path: 'model_saving/global.model',
+
+  each_author_sample_pair_num: 100000,
+  global_epoch: 2,
+  global_warmup_rate: 0.1,
+  triple_loss_m:1,
+  emb_dim: 128,
+  hidden_size: 128,
+  global_lr: 1e-3,
+  train_batch: 32,
+  use_gpu: false
+}
